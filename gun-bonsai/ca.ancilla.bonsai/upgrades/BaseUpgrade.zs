@@ -75,6 +75,8 @@ class ::BaseUpgrade : Object play {
   // ElementalBeam upgrade for an example of this.
   virtual ::UpgradePriority Priority() { return ::PRI_NULL; }
   virtual bool CheckPriority(Actor inflictor) {
+    DEBUG("CheckPriority: inflictor %s[%d] vs. %s[%d]",
+      TAG(inflictor), inflictor.weaponspecial, self.GetClassName(), Priority());
     return !inflictor
       || inflictor.weaponspecial == ::PRI_MISSING
       || (inflictor.weaponspecial > Priority() && Priority() != ::PRI_NULL);

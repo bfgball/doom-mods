@@ -1,11 +1,12 @@
 # 0.10.0
 
 - Balance:
-  - Submunitions have been heavily reworked:
+  - Submunitions have been heavily reworked. This is a very "throw it at the wall and see what sticks" attempt to strike a balance between not making them room-clearingly overpowered at low levels without making them useless. The intended goal is less powerful than Explosive Death but balanced out by its wider reach. Feedback is welcome.
     - Number of submunitions reduced
     - Damage scales with target HP but is split across all munitions
     - Submunition spawning and despawning is smeared across multiple tics
     - Enemies take full damage from submunitions if they are anywhere in the blast radius
+    - Submunitions no longer trigger on-hit effects like elemental DoTs.
 
 # 0.9.7
 

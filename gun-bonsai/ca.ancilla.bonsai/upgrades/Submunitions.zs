@@ -46,7 +46,6 @@ class ::Submunitions::Spawner : Actor {
     let aux = ::Submunitions::Grenade(A_SpawnProjectile(
       "::Submunitions::Grenade", 32, 0, random(0,360),
       CMF_AIMDIRECTION|CMF_ABSOLUTEANGLE));
-    aux.weaponspecial = weaponspecial;
     aux.target = target;
     aux.damage = damage;
     aux.blast_radius = blast_radius;
@@ -62,7 +61,7 @@ class ::Submunitions::Grenade : Actor {
   property UpgradePriority: weaponspecial;
 
   Default {
-    ::Submunitions::Grenade.UpgradePriority ::PRI_EXPLOSIVE;
+    ::Submunitions::Grenade.UpgradePriority ::PRI_NULL;
     Radius 12;
     Height 24;
     Speed 15;
