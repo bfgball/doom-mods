@@ -1,3 +1,12 @@
+# 0.10.0
+
+- Balance:
+  - Submunitions have been heavily reworked:
+    - Number of submunitions reduced
+    - Damage scales with target HP but is split across all munitions
+    - Submunition spawning and despawning is smeared across multiple tics
+    - Enemies take full damage from submunitions if they are anywhere in the blast radius
+
 # 0.9.7
 
 - New:

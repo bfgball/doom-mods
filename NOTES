@@ -7,16 +7,13 @@ Three possible operating modes:
 - Bonsai level integration; respond to bonsai level-up messages by giving new upgrades
 - Bonsai upgrade integration; add a set of bonsai upgrades corresponding to different LD upgrades? don't quite remember
 
-### Indestructable
-
-Slomo option instead of timestop?
-
 ### next
 
 - disable particles option to help narrow down causes of heavy lag
 - disable trails option for frag shots likewise
+- submunitions can chain-trigger on enemies killed by dots; this is probably due to dot damage not properly setting the weaponspecial field
 - swap thunderbolt and paralysis because para is wicked powerful?
-- stop including PENTAHUD and other badlumps
+
 -  nullpointer when attacking upgraded centaurs in Serpent Resurrection:
   - Called from TFLV_Upgrade_Thunderbolt_Aux.PostBeginPlay at GunBonsai-0.9.3.pk3:ca.ancilla.bonsai/upgrades/lightning.zsc, line 461
 
