@@ -45,7 +45,7 @@ class ::Revivification : ::DotModifier {
   }
 
   override void GetTooltipFields(Dictionary fields, uint level) {
-    fields.insert("revive-chance", AsPercent(1.0 - 0.99 ** level));
+    fields.insert("revive-chance", AsPercent(1.0 - 0.999 ** level));
     fields.insert("lifetime", (level*5).."s");
     fields.insert("damage-bonus", AsPercentIncrease(0.2*level));
     fields.insert("armour-bonus", AsPercentDecrease(0.8 ** level));
