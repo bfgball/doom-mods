@@ -22,7 +22,7 @@ class ::ShockingInscription : ::ElementalUpgrade {
   override void OnDamageDealt(Actor player, Actor shot, Actor target, int damage) {
     // Stack 20% of damage * 200ms of stun, softcap at 1s/level
     let zap = ::ShockDot(::Dot.GiveStacks(
-      player, target, "::ShockDot", level*damage*0.2, level*5));
+      player, target, "::ShockDot", level*damage*0.002, level*5));
     zap.cap = level*5;
   }
 
